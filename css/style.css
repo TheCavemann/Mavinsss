@@ -367,9 +367,34 @@ footer{
 
 @media only screen and (max-width: 412px){
 
-    .dashboard {
+.dashboard {
     grid-column: 1;
-    
 }
+
+/*For smartphones min-width: 700px up to max-width: 760px*/
+@media only screen and (max-width: 760px){
+.container {
+width: 980px;
+}
+/* dashboard configuration */
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 990px;
+}
+.dashboard {
+justify-content: center;
+width: 970px;
+}
+footer{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 990px;
+}
+}
+/* dashboard configuration ends here */
+
 
 }
